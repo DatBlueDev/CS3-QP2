@@ -38,7 +38,6 @@
 			}
 			.navbar {
 				padding:0px;
-				padding-bottom:10%;
 			}
 			h1{
 				padding-left:5%;
@@ -64,12 +63,48 @@
 			body{
 				background-color: #5786C4;
 			}
-			.LogInPisayLogo{
+			#LogInPisayLogo{
 				padding-top:0px;
+				top:-20%;
+				position:absolute;
 			}
 			#LogInContainer{
 				background-color:white;
+				
 			}
+			#LogInPisayBackground{
+				margin:0px;
+				padding:0px;
+			}
+			#LogInBox{
+				padding-left:5%;
+				width:40%;
+				height:200px;
+				margin-top:10%;
+				background-color:blue;
+			}
+			.container {
+			  display: flex;
+			  height: 100vh;
+			}
+
+			.bg-image { 
+			  /* The image used */
+			  background-image: url("PSHS_LOGIN_BG.jpg");
+
+			  /* Center and scale the image nicely */
+			  background-repeat: no-repeat;
+			  background-position: left top;
+			  background-size: 100% 100%;
+			  flex: 1;
+			  width: 100vh;
+			}
+
+			.content {
+			  flex: 1;
+			  height: 100%;
+			  overflow: auto;
+}
       </style>
 </head>
 <body>
@@ -98,15 +133,20 @@
 			</div>
 		</div>
 	</nav>
+	<div
+	  class="bg-image"
+	  style="
+		background-image: url('PSHS_LOGIN_BG.jpg');
+		height: 100vh;
+		margin:0px;
+	  "
+	></div>
+	
 
-		<div class="row">
-
-			<div class="container-fluid p-5 my-5 bg-primary text-white" style="margin-left:20%; width:40%;height:200px">
-				<img src = "Pisay.png" alt = "Login Logo" id = "LogInPisayLogo" style="width:100%;">
-
-			</div>
+		<div class="container-fluid" id="LogInBox" >
+			<img src = "Pisay.png" alt = "Login Logo" id = "LogInPisayLogo" style="width:40%;">
 
 		</div>
-	</div>
+
 </body>
 </html>
