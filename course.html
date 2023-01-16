@@ -39,10 +39,13 @@
 			.navbar {
 				padding:0px;
 			}
-			h1{
+			h1, .toptext{
 				padding-left:5%;
-				
+				font-size:175%;
 			}
+            .toptext{
+                font-weight:bold;
+            }
 			#Logo{
 				padding-right:30px;
 			}
@@ -125,31 +128,39 @@
 </head>
 <body>
 
-	<nav class="navbar navbar-expand-lg" style="padding-bottom: 10px;">
+	<nav class="navbar navbar-expand-lg ">
 		<div class="container-fluid" id = "header">
-            <div class="navbar-brand" style="align-items: center;">
-		        <img src="https://media.discordapp.net/attachments/1028259896547868783/1063740430400888912/Logo.png" style = "width: 140px; float: left;" alt = "Logo" id="Logo">
-		        <h2 class="d-inline">PHILIPPINE SCIENCE HIGH SCHOOL<br>CENTRAL LUZON CAMPUS</h2>
-		    </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
-			    <span class="navbar-toggler-icon"></span>
+		  <h1 style="padding-right:5%;" > 
+		  	<img src="Logo.png" style = "width: 140px" alt = "Logo" id="Logo">Philippine Science High School
+		  </h1>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
 		  </button> 
 		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-			    <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="color: #000;">
-				    <li class="nav-item">
-					    <a class="nav-link" href="index.html">Home</a>
-				    </li>
-				    <li class="nav-item">
-					    <a class="nav-link" href="Trash.html">Courses</a>
-				    </li>
-                    <li class="nav-item">
-					    <a class="nav-link" href="Popular.html">Authors</a>
-				    </li>
-				</ul>
-		    </div>
+
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="quiz.html">Quiz</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="course.html">Courses</a>
+				</li>
+				<li>
+					<a class="nav-link" href="grades.html">Grades</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="author.html">Author</a>
+				</li>
+				<li>
+					<a class="nav-link" href="login.html">Log Out</a>
+				</li>
+			</ul>
+			</div>
 		</div>
 	</nav>
-
     <div class="mb-3" style="padding-left:30px; padding-right: 30px; font-family: 'Raleway', sans-serif;">
         <h2 style="padding-left: 30px; padding-top: 20px;"><strong>COMPUTER SCIENCE</strong></h2>
 
@@ -229,7 +240,7 @@
             <div class="col-s-7" style="padding: 10px; width: 70%; color: white;" >
                 <div style="margin-left: 10px;">
 
-				    <h1><strong>GENERAL</strong></h1>
+				    <p class="toptext"><strong>GENERAL</strong></p>
 
                     <div style="border-radius: 25px; background-color: #39567f; padding: 30px; margin-bottom: 10px;"><h5><i class="fa-sharp fa-solid fa-file fa-l"></i> Course Syllabus</h5>
                         <div class="activity-info mt-1 mt-md-0">
@@ -245,7 +256,7 @@
                     <div style="border-radius: 25px; background-color: #39567f; padding: 30px; margin-bottom: 20px"><h5><i class="fa-solid fa-comment"></i> Announcements</h5>
                     </div>
 
-                    <h1><strong>2ND QUARTER</strong></h1>
+                    <p class="toptext"><strong>2ND QUARTER</strong></p>
 
                     <div style="border-radius: 25px; background-color: #39567f; padding: 30px; margin-bottom: 10px;"><h5><i class="fa-solid fa-folder"></i> 2Q Slides</h5>
                         <div class="activity-info mt-1 mt-md-0">
@@ -281,7 +292,7 @@
                         </div>
                     </div>
 
-                    <h1><strong>LAB EXERCISES (AA)</strong></h1>
+                    <p class="toptext"><strong>LAB EXERCISES (AA)</strong></p>
 
                     <div style="border-radius: 25px; background-color: #39567f; padding: 30px; margin-bottom: 10px;"><h5><i class="fa-sharp fa-solid fa-file fa-l"></i> 2Q Practice Problem 1 - Cafe Homepage</h5>
                         <div class="activity-info mt-1 mt-md-0">
@@ -317,14 +328,14 @@
                         </div>
                     </div>
 
-                    <h1><strong>QUIZZES (FA)</strong></h1>
+                    <p class="toptext"><strong>QUIZZES (FA)</strong></p>
 
                     <div style="border-radius: 25px; background-color: #39567f; padding: 30px; margin-bottom: 10px;"><h5><i class="fa-sharp fa-solid fa-square-check"></i> 2Q Quiz 1</h5>
                     </div>
                     <div style="border-radius: 25px; background-color: #39567f; padding: 30px; margin-bottom: 20px;"><h5><i class="fa-sharp fa-solid fa-square-check"></i> 2Q Peer Assessment</h5>
                     </div>
 
-                    <h1><strong>PROJECT (SA)</strong></h1>
+                    <p class="toptext"><strong>PROJECT (SA)</strong></p>
 
                     <div style="border-radius: 25px; background-color: #39567f; padding: 30px; margin-bottom: 10px;"><h5><i class="fa-solid fa-user-group"></i> 2Q Project Groups</h5>
                         <div class="activity-info mt-1 mt-md-0">
@@ -349,7 +360,7 @@
                         </div>
                     </div>
 
-                    <h1><strong>1ST QUARTER</strong></h1>
+                    <p class="toptext"><strong>1ST QUARTER</strong></p>
 
                     <div style="border-radius: 25px; background-color: #39567f; padding: 30px; margin-bottom: 10px;"><h5><i class="fa-solid fa-folder"></i> 1Q Slides</h5>
                         <div class="activity-info mt-1 mt-md-0">
@@ -387,7 +398,7 @@
                     <div style="border-radius: 25px; background-color: #39567f; padding: 30px; margin-bottom: 10px;"><h5><i class="fa-solid fa-globe"></i> W3Schools - HTML</h5>
                     </div>
 
-                    <h1><strong>LAB EXERCISES (AA)</strong></h1>
+                    <p class="toptext"><strong>LAB EXERCISES (AA)</strong></p>
 
                     <div style="border-radius: 25px; background-color: #39567f; padding: 30px; margin-bottom: 10px;"><h5><i class="fa-sharp fa-solid fa-file fa-l"></i> AA1 - The Internet and Privacy</h5>
                         <div class="activity-info mt-1 mt-md-0">
@@ -412,14 +423,14 @@
                         </div>
                     </div>
 
-                    <h1><strong>QUIZZES (FA)</strong></h1>
+                    <p class="toptext"><strong>QUIZZES (FA)</strong></p>
 
                     <div style="border-radius: 25px; background-color: #39567f; padding: 30px; margin-bottom: 10px;"><h5><i class="fa-sharp fa-solid fa-square-check"></i> 1Q - Quiz 1</h5>
                     </div>
                     <div style="border-radius: 25px; background-color: #39567f; padding: 30px; margin-bottom: 20px;"><h5><i class="fa-sharp fa-solid fa-square-check"></i> 1Q - Quiz 2</h5>
                     </div>
 
-                    <h1><strong>PROJECT (SA)</strong></h1>
+                    <p class="toptext"><strong>PROJECT (SA)</strong></p>
 
                     <div style="border-radius: 25px; background-color: #39567f; padding: 30px; margin-bottom: 10px;"><h5><i class="fa-sharp fa-solid fa-file fa-l"></i> 1Q Project - Magazine Website</h5>
                         <div class="activity-info mt-1 mt-md-0">
@@ -444,9 +455,9 @@
                         </div>
                     </div>
 
-                    <h1 class="mb-5"><strong>3RD QUARTER</strong></h1>
+                    <p class="mb-5"><strong>3RD QUARTER</strong></p>
 
-                    <h1><strong>4TH QUARTER</strong></h1>
+                    <p class="toptext"><strong>4TH QUARTER</strong></p>
 			    </div>
                 
 		    </div>

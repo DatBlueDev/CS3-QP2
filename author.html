@@ -11,8 +11,13 @@
 
 	  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,400&family=Raleway:wght@500&display=swap" rel="stylesheet">
 	  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway:wght@500&display=swap" rel="stylesheet">
-      <title>LogIn</title>
-   <style>
+      <title>Author</title>
+	 
+      <style>
+
+			body{
+				background-color:#5786C4;
+			}
 			#header{
 				
                 background-color:#46433E;
@@ -34,6 +39,8 @@
 			}
 			.navbar {
 				padding:0px;
+				padding-bottom:10%;
+				margin-bottom:-5%;
 			}
 			h1{
 				padding-left:5%;
@@ -43,69 +50,56 @@
 				padding-right:40px;
 			}
 
+
 			.nav-link{
 				color: white;
 				font-size:150%;
 			}
-
-
+			
+			#AnnouncementsContainer{
+				background-color:#4966A6;
+				border-radius:25px;
+				width:90%;
+				padding-bottom: 1%;
+				margin-bottom: 2%;
+			}
 			p{
 				font-family: 'Poppins', sans-serif;
 
 			}
 			.navbar-toggler{
-				background-color: white;
+				  background-color: white;
+			  }
+			h2, h3, h4,h6, p{
+				color:white;
 			}
-			body {
- 				background-image: url('PSHS_LOGIN_BG.png');
-	  			background-repeat: no-repeat;
-  				background-attachment: fixed;
-				background-size: 100% ;	
-				background-color: #5786C4;	
-				font-family: 'Raleway', sans-serif;
+			p{
+				margin-left:2.5%;
+				margin-top:1%;
 
-				height: 100%;
-				margin: 0px;
-				padding: 0px;			
 			}
-
-			form {
-                border: 3px solid black;
-				background-color: white ;
-            }
-			input[type=text], input[type=password] {	
-  			    width: 100%;
-  			    padding: 12px 20px;
-  			    margin: 8px 0;
-  			    border: 1px solid black;
-			}		
-			button {
-  		        background-color: #415A79;
-  			    color: white;
-      			padding: 14px 20px;
-  	    		margin: 8px 0;
-  		    	border: none;
-  			    cursor: pointer;
-  			    width: 100%;
+			h2{	
+				margin-left:5%;
 			}
-            button:hover {
-                opacity: 0.8;
-            }
-			.grandParentContaniner{
-				display:table; 
-				height:100%; 
-				margin: 0 auto;
+			h3{
+				margin-left:1%;
+				padding-top:1%;
 			}
-			.parentContainer {
-				padding-top: 100px;
-				display:table-cell; 
-				vertical-align:middle;
+			h4{
+				margin-left:1%;
+				padding-top:1%;
 			}
-    </style>
+			h6{
+				margin-left:1%;
+			}
+			* {box-sizing:border-box}
+			.authorDiv{
+				margin-bottom:2%;padding-left:2%;
+			}
+      </style>
 </head>
-
 <body>
-
+	
 	<nav class="navbar navbar-expand-lg ">
 		<div class="container-fluid" id = "header">
 		  <h1 style="padding-right:5%;" > 
@@ -139,26 +133,37 @@
 			</div>
 		</div>
 	</nav>
-&nbsp;
-	<div class="grandParentContaniner">
-		<div class="parentContainer">
-			<form action="index.html" method="post">
-				<div class="container-fluid" id="login">
-					<div class="container"></div>
-						<div class="row">
-        					<div class="col-1">
-            					<img src="Logo.png" style="height: 50px ; width: 50px; padding-top: 2px;">
-        					</div>
-    			    		<div class="col-6">
-            					<div style="padding-top: 10px; text-align: justify; padding-left:30px;">PSHS Log-In</div>
-        					</div>
-					</div>
-		  			<input type="text" placeholder="Username or Email" name="uname" required>
-		  			<input type="password" placeholder="Password" name="psw" required>
-			  
-		  			<button type="submit">Login</button>
-				</div>
-			</form>
+
+	<div class="container-fluid"  id = "AnnouncementsContainer" >
+
+		<h4>Authors Page</h4>
+		<h4>Members and their contributions:</h4>
+		<h6>(information may or may not be incomplete)</h6>
+		
+		<div style="margin-bottom:2%;padding-left:2%;">
+			<img src="Pfp1.png" style="height: 100px; width: 100px; border-radius: 50%;" alt = "Ava">
+			<p class = "AuthorsText" style = "display:inline-block;">Ava Vaa -   Courses page, and Canva Design</p>
+		</div>
+
+		<div class="authorDiv">
+			<img src="Pfp2.png" style="height: 100px; width: 100px; border-radius: 50%;" alt = "Chiamie">
+			<p class = "AuthorsText" style = "display:inline-block;" >Chiamie Dizon - Quiz page, </p>
+		</div>
+
+		<div  class="authorDiv">
+			<img src="Pfp3.png" style="height: 100px; width: 100px; border-radius: 50%;" alt = "Jaeda">
+			<p class = "AuthorsText" style = "display:inline-block;">Jaeda Iral - Canva Design and Grades page</p>
+		</div>
+
+		<div  class="authorDiv">
+			<img src="Pfp4.png" style="height: 100px; width: 100px; border-radius: 50%;" alt = "Kyle">
+			<p class = "AuthorsText" style = "display:inline-block;">Kyle Tristan - Homepage, Login page, navbar, assembling and double checking submissions</p>
+		</div>
+	
+		<div  class="authorDiv">
+
+			<img src="Pfp5.png" style="height: 100px; width: 100px; border-radius: 50%;" alt = "Jian">
+			<p class = "AuthorsText" style = "display:inline-block;">Liu Jian Cruz- Design, Author page, Login page</p>
 		</div>
 	</div>
 
