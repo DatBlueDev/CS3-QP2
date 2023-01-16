@@ -13,10 +13,6 @@
 	  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway:wght@500&display=swap" rel="stylesheet">
       <title>title amazing</title>
    <style>
-      <style>
-			body{
-				background-color:rgb(255, 253, 248);
-			}
 			#header{
 				
                 background-color:#46433E;
@@ -58,55 +54,54 @@
 
 			}
 			.navbar-toggler{
-				  background-color: white;
-			  }
-			body{
-				background-color: #5786C4;
+				background-color: white;
 			}
-			#LogInPisayLogo{
-				padding-top:0px;
-				top:-20%;
-				position:absolute;
-			}
-			#LogInContainer{
-				background-color:white;
-				
-			}
-			#LogInPisayBackground{
-				margin:0px;
-				padding:0px;
-			}
-			#LogInBox{
-				padding-left:5%;
-				width:40%;
-				height:200px;
-				margin-top:10%;
-				background-color:blue;
-			}
-			.container {
-			  display: flex;
-			  height: 100vh;
+			body {
+ 				background-image: url('PSHS_LOGIN_BG.jpg');
+	  			background-repeat: no-repeat;
+  				background-attachment: fixed;
+				background-size: 100% 100%;	
+				background-color: #5786C4;	
+				height: 100%;
+				margin: 0px;
+				padding: 0px;			
 			}
 
-			.bg-image { 
-			  /* The image used */
-			  background-image: url("PSHS_LOGIN_BG.jpg");
-
-			  /* Center and scale the image nicely */
-			  background-repeat: no-repeat;
-			  background-position: left top;
-			  background-size: 100% 100%;
-			  flex: 1;
-			  width: 100vh;
+			form {
+                border: 3px solid black;
+				background-color: white ;
+            }
+			input[type=text], input[type=password] {	
+  			    width: 100%;
+  			    padding: 12px 20px;
+  			    margin: 8px 0;
+  			    border: 1px solid black;
+			}		
+			button {
+  		        background-color: #415A79;
+  			    color: white;
+      			padding: 14px 20px;
+  	    		margin: 8px 0;
+  		    	border: none;
+  			    cursor: pointer;
+  			    width: 100%;
 			}
-
-			.content {
-			  flex: 1;
-			  height: 100%;
-			  overflow: auto;
-}
-      </style>
+            button:hover {
+                opacity: 0.8;
+            }
+			.grandParentContaniner{
+				display:table; 
+				height:100%; 
+				margin: 0 auto;
+			}
+			.parentContainer {
+				padding-top: 30%;
+				display:table-cell; 
+				vertical-align:middle;
+			}
+    </style>
 </head>
+
 <body>
 
 	<nav class="navbar navbar-expand-lg">
@@ -133,20 +128,28 @@
 			</div>
 		</div>
 	</nav>
-	<div
-	  class="bg-image"
-	  style="
-		background-image: url('PSHS_LOGIN_BG.jpg');
-		height: 100vh;
-		margin:0px;
-	  "
-	></div>
-	
-
-		<div class="container-fluid" id="LogInBox" >
-			<img src = "Pisay.png" alt = "Login Logo" id = "LogInPisayLogo" style="width:40%;">
-
+&nbsp;
+	<div class="grandParentContaniner">
+		<div class="parentContainer">
+			<form action="index.html" method="post">
+				<div class="container-fluid" id="login">
+					<div class="container"></div>
+						<div class="row">
+        					<div class="col-1">
+            					<img src="Logo.png" style="height: 50px ; width: 50px; padding-top: 2px;">
+        					</div>
+    			    		<div class="col-6">
+            					<div style="padding-top: 10px; text-align: justify;">piss yay</div>
+        					</div>
+					</div>
+		  			<input type="text" placeholder="Username or Email" name="uname" required>
+		  			<input type="password" placeholder="Password" name="psw" required>
+			  
+		  			<button type="submit">Login</button>
+				</div>
+			</form>
 		</div>
+	</div>
 
 </body>
 </html>
